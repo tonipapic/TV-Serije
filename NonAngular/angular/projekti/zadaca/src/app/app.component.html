@@ -1,0 +1,22 @@
+<h1></h1>
+
+<nav>
+  <div class="margin-left-auto">
+    <a routerLink="/">Pretraži serije</a>
+    <a routerLink="/dokumentacija">Dokumentacija</a>
+
+    <a [routerLink]="['/favoriti']" routerLinkActive="router-link-active" *ngIf="isLoggedIn()">Favoriti</a>
+
+  </div>
+  <div class="margin-left-auto">
+    Razina prava: {{currentRole}}
+    <a [routerLink]="['/profil']" routerLinkActive="router-link-active" *ngIf="isLoggedIn()">Profil</a>
+    <button [routerLink]="['/prijava']" routerLinkActive="router-link-active" *ngIf="!isLoggedIn()">Prijava</button>
+    <button [routerLink]="['/prijava']" routerLinkActive="router-link-active" *ngIf="isLoggedIn()">Odjava</button>
+   </div>
+</nav>
+
+<main>
+
+  <router-outlet></router-outlet>
+</main>

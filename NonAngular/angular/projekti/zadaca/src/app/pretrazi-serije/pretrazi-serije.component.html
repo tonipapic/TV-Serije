@@ -1,0 +1,16 @@
+
+    <h1>mojeSerije</h1>
+    <div >
+      <div id="searchBoxDiv">
+
+        <span>Pretraži serije:</span>
+        <input type="text"  id="searchBox" (keyup)='SearchSeries($event)' placeholder="Pretraži">
+      </div>
+    </div>
+    <div id="list"> 
+      <div *ngFor="let item of seriesList">
+        <h3 class="">{{ item.name }}</h3>
+        <button (click)="redirect(item.id)">Detalji</button>
+        <p class="d-block">Opis: {{ item.overview }}</p>
+      </div>
+    </div>

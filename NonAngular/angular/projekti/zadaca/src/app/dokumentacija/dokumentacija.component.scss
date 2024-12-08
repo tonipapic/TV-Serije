@@ -1,0 +1,17 @@
+tr,
+th,
+td {
+  border: 2px solid rgb(177, 177, 177);
+  width: 15%;
+  height: 5vh !important;
+  transition: ease-in-out 75ms;
+}
+.table-success {
+  background-color: rgb(132, 236, 146);
+}
+.table-warning {
+  background-color: rgb(236, 225, 132);
+}
+tr:hover td {
+  background-color: gainsboro !important;
+}

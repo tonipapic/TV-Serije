@@ -1,0 +1,26 @@
+{
+  "name": "tv-serije",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.mjs",
+  "scripts": {
+    "pripremi": "npm link --save express sqlite3 body-parser cookie-parser express-session nodemailer jsonwebtoken totp-generator base32-encoding",
+    "debug": "nodemon server.mjs konfPodaci.csv",
+    "start": "node server.mjs konfPodaci.csv ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Toni Papic",
+  "license": "ISC",
+  "dependencies": {
+    "base32-encoding": "file:../../../../../usr/lib/node_modules/base32-encoding",
+    "body-parser": "file:../../../../../usr/lib/node_modules/body-parser",
+    "cookie-parser": "file:../../../../../usr/lib/node_modules/cookie-parser",
+    "express": "file:../../../../../usr/lib/node_modules/express",
+    "express-session": "file:../../../../../usr/lib/node_modules/express-session",
+    "jsonwebtoken": "file:../../../../../usr/lib/node_modules/jsonwebtoken",
+    "nodemailer": "file:../../../../../usr/lib/node_modules/nodemailer",
+    "nodemon": "^3.0.1",
+    "sqlite3": "file:../../../../../usr/lib/node_modules/sqlite3",
+    "totp-generator": "file:../../../../../usr/lib/node_modules/totp-generator"
+  }
+}

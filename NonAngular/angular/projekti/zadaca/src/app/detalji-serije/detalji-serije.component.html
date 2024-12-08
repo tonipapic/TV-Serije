@@ -1,0 +1,15 @@
+<h1>Detalji serije</h1>
+
+<div *ngIf="podaci!=undefined">
+    <h2>{{podaci!.name}}</h2>
+    <img class="floatLeft maginInline5vh" src={{podaci!.poster_path}}>
+    <p>Opis: {{podaci!.overview}}</p>
+    <p>Broj sezona: {{podaci!.number_of_seasons}}</p>
+    <p>Broj epizoda: {{podaci!.number_of_episodes}}</p>
+    <a *ngIf="podaci!.homepage!=''" href={{podaci!.homepage}}>Poveznica na vanjsku stranicu</a>
+    <p *ngIf="podaci!.homepage==''">Trenutno nije dostupna vanjska poveznica`</p>
+    <div *ngIf="currRole!='Gost'">
+        <br><button (click)="addToFavourite()"  *ngIf="!postojiUFavoritima()">Dodaj u favorite</button>
+        <br><button (click)="removeFromFavourite()"  *ngIf="postojiUFavoritima()">Ukloni iz favorita</button>
+    </div>
+</div>

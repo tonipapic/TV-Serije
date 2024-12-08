@@ -1,0 +1,25 @@
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2vh;
+}
+a {
+  font-size: 22px;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-inline-start: 2vh;
+
+  color: black;
+  transition: ease-in-out 150ms;
+}
+a:hover {
+  text-decoration: underline;
+  color: rgb(240, 243, 211);
+  background-color: rgb(80, 80, 68);
+  padding: 10px;
+  border-radius: 15px;
+}
+.margin-left-auto {
+  margin-left: auto;
+}
